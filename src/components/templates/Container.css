@@ -1,5 +1,8 @@
-.container{
+.container {
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0,26);
+  box-shadow: 0 2px 12px 6px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+  width: 90%;
+  max-width: 40rem;
+  margin: 0 auto;
 }

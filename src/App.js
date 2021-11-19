@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
-import Container from './components/templates/Container';
 import AddSubscriber from './components/subscribers/AddSubscriber';
 
 export default function App() {
-  return (
-    // <Container>
-    //   {/* <AddSubscriber></AddSubscriber> */}
+  const [subscriberList, setSubscriberList] = useState([]);
 
-    // </Container>
+  const onAddSubscriberHandler = (aName, aPincode) => {
+    setSubscriberList((prevState) => {
+      return [...prevState, { name: aName, pincode: aPincode }];
+    });
+  };
+  return (
     <div>
-      <Container />
-      <AddSubscriber />
+      <AddSubscriber onAddSubscriber={onAddSubscriberHandler}></AddSubscriber>
       Some text here
     </div>
   );
