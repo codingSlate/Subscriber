@@ -16,7 +16,7 @@ const AddSubscriber = (props) => {
       console.log('Pincode should not be empty.');
       return;
     }
-
+    props.onAddSubscriber(name, pincode);
     setName('');
     setPincode('');
   };

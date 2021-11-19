@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import AddSubscriber from './components/subscribers/AddSubscriber';
+import SubscriberList from './components/subscribers/SubscriberList';
 
 export default function App() {
   const [subscriberList, setSubscriberList] = useState([]);
@@ -13,7 +14,8 @@ export default function App() {
   return (
     <div>
       <AddSubscriber onAddSubscriber={onAddSubscriberHandler}></AddSubscriber>
-      Some text here
+      <SubscriberList list={subscriberList}></SubscriberList>
+
     </div>
   );
 }

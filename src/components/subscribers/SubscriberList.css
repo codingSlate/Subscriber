@@ -1,0 +1,22 @@
+.subscribers {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
+.subscribers ul {
+  list-style: none;
+  padding: 1rem;
+}
+.subscribers li {
+  box-shadow: 0 2px 8px 2px #eee;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+li div {
+  padding: 0 0.5rem;
+}
+li div:last-child {
+  margin-left: auto;
+}
