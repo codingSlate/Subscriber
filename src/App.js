@@ -14,8 +14,8 @@ export default function App() {
   return (
     <div>
       <AddSubscriber onAddSubscriber={onAddSubscriberHandler}></AddSubscriber>
+      {subscriberList == ''  && <div>No Data Found</div>}
       <SubscriberList list={subscriberList}></SubscriberList>
-
     </div>
   );
 }
