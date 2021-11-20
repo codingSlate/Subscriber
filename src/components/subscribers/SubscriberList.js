@@ -7,7 +7,7 @@ const SubscriberList = (props) => {
         {props.list.map((item, index) => {
           return (
             <li key={index}>
-              <div># {index + 1}</div>
+              <div>#{index + 1}</div>
               <div>{item.name}</div>
               <div>{item.pincode}</div>
             </li>

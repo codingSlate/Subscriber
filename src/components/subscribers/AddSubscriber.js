@@ -50,9 +50,9 @@ const AddSubscriber = (props) => {
       )}
       <form onSubmit={submitHandler}>
         <Container className="input">
-          <label>Name</label>
+          <label>Enter Name</label>
           <input type="text" onChange={onNameChangeHandler} value={name} />
-          <label>PIN code</label>
+          <label>Enter Pincode</label>
           <input
             type="text"
             onChange={onPincodeChangeHandler}
