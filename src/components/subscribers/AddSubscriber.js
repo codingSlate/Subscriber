@@ -40,7 +40,7 @@ const AddSubscriber = (props) => {
 
   return (
     <div>
-      <h2>Subscription Form </h2>
+      <h2 className="text-center">Subscription Form </h2>
       {error && (
         <ErrorModal
           title={error.title}

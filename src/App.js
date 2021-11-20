@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div>
       <AddSubscriber onAddSubscriber={onAddSubscriberHandler}></AddSubscriber>
-      {subscriberList == ''  && <div>No Data Found</div>}
+      {subscriberList == '' && <p className="text-center">No Data Found</p>}
       <SubscriberList list={subscriberList}></SubscriberList>
     </div>
   );
