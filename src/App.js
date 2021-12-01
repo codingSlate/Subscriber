@@ -14,6 +14,7 @@ export default function App() {
   return (
     <div>
       <AddSubscriber onAddSubscriber={onAddSubscriberHandler}></AddSubscriber>
+      <p>Why gettig error on clicking "ADD btn" with empty field</p>
       {subscriberList == '' && <p className="text-center">No Data Found</p>}
       <SubscriberList list={subscriberList}></SubscriberList>
     </div>
